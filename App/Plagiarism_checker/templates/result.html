@@ -1,0 +1,44 @@
+<!-- results.html -->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Results</title>
+</head>
+<body>
+    <h1>Plagiarism Results</h1>
+    <ul>
+        {% for data in plagiarism_results %}
+        <li>Comparing File {{ data.0 }} with File {{ data.1 }} and generating the score as output</li>
+        <li>Score: {{ data.2 }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>>-->
+
+<!-- results.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Results</title>
+</head>
+<body>
+    <h1>Plagiarism Results</h1>
+    <ul>
+        {% for data in plagiarism_results %}
+        <li>Comparing File {{ data.0 }} with File {{ data.1 }} and generating the score as output</li>
+        {% if data.2 > 0.15 %}
+            <li><img src="D:\Programming\python\PlagiarismChecker\App\Plagiarism_checker\templates\red_file.png" alt="Red File"></li>
+        {% else %}
+            <li><img src="D:\Programming\python\PlagiarismChecker\App\Plagiarism_checker\templates\green_file.png" alt="Green File"></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

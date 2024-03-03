@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="icon" href="Pics/titleLogo.png" type="image/png">-->
+    <title>
+        Plagiarism Checker
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="blueBg">
+            <div class="box Login">
+                <h2 class="lh2">Want to check the Plagiarism?</h2>
+                <h3 class="lh3">Just upload the files here!</h3>
+                <button class="loginBtn">Upload here</button>
+            </div>
+            <div class="box SignUp">
+                <h2 class="sh2">Results will appear here..</h2>
+                <!--<h3 class="sh3">Sign up and explore the world of books!</h3>
+                <button class="signUpBtn">Sign Up</button>-->
+            </div>
+        </div>
+        <div class="FormBx">
+            <div class="form loginform">
+                <form action="check_plagiarism" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <h2 class="lg">Upload the files here..</h2>
+                    <!--<input type="text" placeholder="Username" class="us" id="username">
+
+                    <input type="password" placeholder="Password" class="pwd" id="password">-->
+                    <!--<i class="far fa-eye" id="togglePassword1"></i>-->
+
+                    <input type="file" name="input_files" id="input_button"><br>
+                    <input type="file" name="input_files" id="input_button" multiple><br>
+                    <input type="submit" value="Upload" class="Lbtn">
+
+                    <!--<input type="submit" value="Sign In" class="Lbtn">-->
+                    <!--<a href="#" class="forgot">Forgot Password</a>-->
+                </form>
+            </div>
+
+            <div class="form signupform" id="sform">
+                <form>
+                    <h2 class="create">Create Your Free Account</h2>
+                    <input type="text" placeholder="Username" class="user" id="userid">
+                    <input type="text" placeholder="Email Address" class="email" id="emailid">
+                    <input type="password" placeholder="Password" class="passwd" id="passwdid">
+                    <!--<i class="far fa-eye" id="togglePassword2"></i>-->
+
+                    <input type="password" placeholder="Confirm Password" class="cpasswd" id="cpasswdid">
+                    <!--<i class="far fa-eye" id="togglePassword3"></i>-->
+
+                    <input type="submit" value="Sign Up" class="sbtn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="logos">
+        <img src="Pics/titleLogo.png" class="logo" alt="logo">
+        <img src="Pics/pagepals.png" class="img_text" alt="pagepals">
+        <div class="logoDescrp">
+            <p class="plogoDescrp">An interactive platform to discover various art. Dive deeper into famous artists and
+                their artworks, art
+                museums, old art,
+                latest
+                artworks and much more! Discover the joy of effortless art
+                trading on ArtHive!
+            </p>
+        </div>
+    </div>
+
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>

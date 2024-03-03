@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+
+
+/*Logo*/
+.logo {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 7px;
+    left: 25px;
+    border-radius: 50%;
+}
+
+.img_text{
+    position: absolute;
+    width: 125px;
+    height: 100px;
+    left: 125px;
+}
+
+.logos {
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    animation: bounce 0.8s infinite alternate;
+}
+
+.logoDescrp {
+    position: absolute;
+    top: 200%;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    margin-top: 1px;
+    margin-left: 50px;
+    background-color: none;
+    color: #180d02;
+    padding: 12px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transform: translateY(130px);
+    margin-left: -10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 22.3px;
+    font-weight: 110px;
+
+}
+
+.plogoDescrp {
+    font-family: 'Lora', serif;
+}
+
+.logos:hover .logoDescrp {
+    opacity: 1;
+    cursor: default;
+}
+
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-6px);
+    }
+}
+
+/*end*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*animated gradient background*/
+:root {
+    --colour-2: #00a7cf;
+    --colour-3: #f3e84f;
+    --colour-4: #FF3386;
+    --colour-5: #c9359c;
+    --colour-6: #FFC733;
+    --colour-7: #FF7D33;
+    --colour-8: #8cf424;
+    --colour-9: #d07aef;
+    --colour-10: #ed9209;
+    --colour-11: #4bbe32;
+    --colour-12: #d28615;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 1s;
+    background-image: linear-gradient(to right, var(--colour-2), var(--colour-9), var(--colour-5),
+            var(--colour-4), var(--colour-7), var(--colour-6), var(--colour-3), var(--colour-8), var(--colour-10), var(--colour-11), var(--colour-12));
+    background-size: 600%;
+    background-position: 0 0;
+    box-shadow: inset 0 0 5em rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 100%;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-name: gradLoop;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+/*end*/
+
+/*blue container*/
+.blueBg {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #69d2f2;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.7);
+    border-radius: 23px;
+}
+
+.blueBg .box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*end*/
+
+/*h2,h3*/
+.blueBg .box h2 {
+    color: #223181;
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+
+
+.blueBg .box h3 {
+    color: #223181;
+    font-size: 22px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/*end*/
+
+/*signUp, Login btn*/
+.blueBg .box .signUpBtn {
+    border-radius: 20px;
+    background: #2da1e8;
+}
+
+.blueBg .box .loginBtn {
+    border-radius: 20px;
+    background: #2da1e8;
+}
+
+.blueBg .box .loginBtn:hover {
+    background: #47afef;
+}
+
+.blueBg .box .signUpBtn:hover {
+    background: #47afef;
+}
+
+.blueBg .box button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #dbefef;
+    color: #212b2d;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+/*end*/
+
+/*form*/
+.FormBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #f59ec1;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5);
+    transition: 0.75s ease-in-out;
+    overflow: hidden;
+    border-radius: 23px;
+}
+
+.FormBx.active {
+    left: 50%;
+}
+
+.FormBx .form {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.75s;
+}
+
+.FormBx .loginform {
+    transition-delay: 0.25s;
+}
+
+.FormBx.active .loginform {
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.FormBx .signupform {
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.FormBx.active .signupform {
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.FormBx .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.FormBx .form form h2 {
+    font-size: 1.5em;
+    color: #212b2d;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.FormBx .form form .create {
+    font-size: 43px;
+    color: #5b0227;
+    margin-bottom: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+
+.FormBx .form form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #0d1010;
+}
+
+.FormBx .form form input[type="submit"] {
+    background: #e7649a;
+    border: none;
+    color: #350217;
+    max-width: 100px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 100px;
+}
+
+/*end*/
+
+/*loginBtn*/
+.FormBx .form form .Lbtn {
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0px 10px 97px;
+}
+
+.FormBx .form form .Lbtn:hover {
+    background: #f468a2;
+}
+
+/*end*/
+
+/*signUp btn*/
+.FormBx .form form .sbtn {
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0px 20px 97px;
+    margin-top: 15px;
+}
+
+.FormBx .form form .sbtn:hover {
+    background: #f468a2;
+}
+
+.error-li {
+    position: absolute;
+    left: 16%;
+    top: 88%;
+    color: #560b19;
+}
+
+/*end*/
+
+/*forgotPassword*/
+.FormBx .form form .forgot {
+    color: #0d1010;
+    text-align: center;
+    text-decoration: none;
+}
+
+.FormBx .form form .forgot:hover {
+    color: #8a0a3f;
+}
+
+/*end*/
+
+/*input username,password*/
+.FormBx .form form .lg {
+    font-size: 1.5em;
+    padding: 0 30px 180px 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 48px;
+    height: 60px;
+    text-align: center;
+    color: #5b0227
+}
+
+.FormBx .form form .us {
+    border: #f4cbf8;
+    border-radius: 15px;
+    text-align: center;
+    background: #f0ddef;
+}
+
+.FormBx .form form .pwd {
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    background: #f0ddef;
+}
+
+/*end*/
+
+/*eye icon*/
+.FormBx .form form #togglePassword1 {
+    margin-left: 270px;
+    cursor: pointer;
+    margin-top: -47px;
+    margin-bottom: 33px;
+    color: #737979
+}
+
+.FormBx .form form #togglePassword1:hover {
+    color: #262828;
+}
+
+.FormBx .form form #togglePassword2 {
+    margin-left: 270px;
+    cursor: pointer;
+    margin-top: -47px;
+    margin-bottom: 33px;
+    color: #737979
+}
+
+.FormBx .form form #togglePassword2:hover {
+    color: #262828;
+}
+
+.FormBx .form form #togglePassword3 {
+    margin-left: 270px;
+    cursor: pointer;
+    margin-top: -47px;
+    margin-bottom: 33px;
+    color: #737979
+}
+
+.FormBx .form form #togglePassword3:hover {
+    color: #262828;
+}
+
+/*end*/
+
+/*user,email input*/
+.FormBx .form form .user {
+    border: #f4cbf8;
+    border-radius: 15px;
+    text-align: center;
+    background: #f0ddef;
+}
+
+.FormBx .form form .email {
+    border: #f4cbf8;
+    border-radius: 15px;
+    text-align: center;
+    background: #f0ddef;
+}
+
+.FormBx .form form .passwd {
+    border: #f4cbf8;
+    border-radius: 15px;
+    text-align: center;
+    background: #f0ddef;
+}
+
+.FormBx .form form .cpasswd {
+    border: #f4cbf8;
+    border-radius: 15px;
+    text-align: center;
+    background: #f0ddef;
+    margin-top: 15px;
+}
+
+/*end*/
+
+
+
+
+
+/*animated gradient background*/
+@keyframes gradLoop {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 50% 0;
+    }
+
+    50% {
+        background-position: 90% 0;
+    }
+
+    60% {
+        background-position: 60%;
+    }
+
+    75% {
+        background-position: 40%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+/*end*/
+
+/*responsive containers*/
+@media(max-width:991px) {
+    .container {
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .blueBg {
+        top: 0;
+        height: 100%;
+    }
+
+    .FormBx {
+        width: 100%;
+        height: 500px;
+        top: 0;
+        box-shadow: 10px;
+    }
+
+    .blueBg .box {
+        position: absolute;
+        width: 100%;
+        height: 170px;
+        bottom: 0;
+    }
+
+    .box.Login {
+        top: 0;
+    }
+
+    .FormBx.active {
+        left: 0;
+        top: 150px;
+    }
+}
+
+@media (max-width:1185px) {
+    .logos {
+        display: none;
+    }
+}
+
+@media (max-width:990px) {
+
+    .sh3 {
+        display: none;
+    }
+
+    .sh2 {
+        margin-top: 10px;
+    }
+
+    .signUpBtn {
+        margin-top: -45px;
+    }
+
+    .lh3 {
+        display: none;
+    }
+
+    .lh2 {
+        margin-top: -7px;
+        margin-bottom: 3px;
+    }
+
+    .loginBtn {
+        margin-top: -50px
+    }
+}
+
+/*end*/

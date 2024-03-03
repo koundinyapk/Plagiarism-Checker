@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Plagiarism Checker</title>
+</head>
+<body>
+    <h1>Plagiarism Checker</h1>
+    <form action="check_plagiarism" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        Upload the files here: <br>
+        Source file:
+        <!--<input type="file" name="input_files" id="input_button"><br>-->
+        <input type="file" name="input_files" id="input_button"><br>
+        Target Files:
+        <input type="file" name="input_files" id="input_button" multiple><br> 
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

@@ -1,0 +1,112 @@
+Information Technology Mobile Computing Module: Wireless Local Area Network: IEEE 802.11
+Learning Objectives
+• Introduction to Wireless Local Area Network
+• Advantages of WLAN
+• Types of WLAN
+• IEEE 802.11 standards
+• Modes of wireless networks
+• Introduction to 802.11 architecture
+Introduction
+Wireless Local Area Networks (WLAN)is a term used to define network of spatially and temporally dispersed elements which transmit and receive on air using different bands of Electromagnetic spectrum like Infrared, visible, radio and microwaves. According to CISCO,
+“A Wireless Local Area Network (WLAN) implements a flexible data communication system frequently augmenting rather than replacing a wired LAN within a building or campus”.
+Every technology needs standardization. IEEE 802.11 standard was published in 1997 for the provision of network access and resources to different network elements on move. Since its inception, the standard is under continuous updation and amendment for the purpose of providing new services and capabilities and overcoming the limitations of previous amendments. This module marks the beginning of our learning towards IEEE 802.11. In this module, we will learn about the evolution, modes and architecture of IEEE 802.11 and in next modules we will learn about layers and the security mechanisms of this standard.
+Advantages of WLAN
+WLAN is a local area data network which provides access of information and resources to devices without wires. It is not a replacement but is implemented as an extension to a wired LAN. As compared to wired infrastructure, it has many advantages listed as follows:
+2
+• Mobility: It provides “Anywhere Anytime” access of data and information. It provides support of real time information facilitating decision making in time critical events like Stock updates.
+• Low implementation costs: As compared to wired LAN the implementation costs in terms of manpower, time, complexity of installation is less. It is easy to setup, relocate, change and manage a WLAN. Initial costs for hardware may be higher than wired networks, but overall installation expenses and life cycle costs are lower.
+• Installation Speed: It does not involve setting up cables and other components and arranging in form of required topology. Just configure a router and connect devices. It’s that simple.
+• Network Expansion: “Wireless can go where wires cannot”. It can be laid where it is not possible to lay down a wired network like under the sea. The transmission can penetrate through buildings and walls.
+• Higher Capacity: More users can be accommodated as compared to wired. For example in wired, a separate cable needs to be laid for each subscriber but for a cellular WLAN the capacity is increased manifold as per the channel availability. For eg. If a channel caters 10 subscribers and 100 channels are available, 1000 subscribers can be accommodated.
+• Reliability: No fear of downtime due to cable failure which is the primary cause of failure in wired network,
+• Scalability: It is easy to scale a WLAN to increase number of users as configurations can be easily changed as no fixed topology exists.
+• ISM band: It operates on license free band whether it is infra-red band or ISM band.
+• Robustness: The WLAN can survive disasters eg. Earthquakes. If the devices are not damaged, network won’t be affected.
+• Planning: Don’t need additional plan of wires, plugs, switches etc. The WLANs can be adhocly setup with the use of devices following same standard.
+Types of WLAN
+As per the type of EM waves used for transmission, the WLAN can be divided into two categories:
+ Infra-red WLAN: Infrared LAN uses LED, LASER, diffused bulbs as sources of energy and the receivers are photoreceptors sensitive to light. Operates on 900nm band. Eg. IrDA (Infrared data association)
+3
+ Radio based LAN: The antennas used in radio based LANs work on 2.4 GHz ISM band. Eg. Bluetooth, Wi-fi etc.
+The strengths and limitations of both the forms have been summarized in the given table:
+Table 1: Infra red vs Radio WLAN
+INFRA RED
+RADIO
+Strengths
+• Simple and Cheap technology
+• Can be easily integrated to hand-held devices providing an interface for Infra-red data association
+• Support data rates upto 4Mbits/sec
+• License free
+• Electrical devices do not interfere with it
+Do not need Line-of-sight
+• Covers large areas
+• Penetrate through Walls and obstacles
+• Higher data rates (~ 100 Mbps)
+Limitations
+• LOS of sight required
+• IrDA devices are connected to a serial port hence data rates are not high
+• Cannot penetrate through walls or obstacles
+• Range is limited (upto few meters)
+• Interfere with the electrical appliances or other radio devices
+• Very few License free bands are available
+• Harmful for human beings so cannot be used in hospitals etc.
+Flavours of WLAN
+Some of the popular flavours of WLAN are:
+HiperLAN: "HiperLAN is a set of wireless local area network communication standards primarily used in European countries. There are two specifications: HiperLAN/1 and HiperLAN/2. Both have been adopted by the European Telecommunications Standards Institute (ETSI). HiperLAN/1 provides communications at up to 20 Mbps in the 5-GHz range of the radio
+4
+frequency (RF) spectrum. HiperLAN/2 operates at up to 54 Mbps in the same RF band. HiperLAN/2 is compatible with 3G (third-generation) WLAN systems for sending and receiving data, images, and voice communications.
+IEEE 802.11: IEEE 802.11 is a standard for Local Area Networks using the ISM band from 2.4-2.5 GHz.
+HomeRF: This is a standard providing interoperability between PC and electronic devices at home.
+Bluetooth: It is standardized as a personal area network for interconnecting devices in ad hoc fashion.
+MANET: MANET is a working group within IETF to investigate and develop standards for Mobile ad hoc networks.
+Evolution of IEEE 802.11
+It all started in 1985, when Federal communications Commission (FCC) deregulated the spectrum from 2.4-2.5 GHz for use by Industrial, Scientific and Medical Communities which meant that Spectrum was available for individual non-licensed applications. It was an excellent opportunity for wireless application developer because they could develop without investing on licensing. This triggered many developments that were proprietary, expensive, slow and lacked widespread availability /adaption. In the early 1990s, IEEE established an executive committee, as part of the IEEE 802 standard for Local and Metropolitan Area Networks to focus on developing a wireless LAN solution that could grow into a standard with widespread acceptance, using the deregulated ISM band from 2.4-2.5 GHz. The standard was aimed to provide a reliable, fast, inexpensive, robust wireless communication. The first version of IEEE 802.11 was published in 1997.It gained success due to its compatibility with current IEEE networks particularly 802.3 Ethernet. The maximum data rate was 2 Mbps. It included forward error correction, direct sequence and frequency hopping as spread spectrum methods. It also included a specification for infrared wireless communications, still operating at up to 2 Mbps.
+Since its ratification, it has been under continuous amendment and updation many other standards were released as amendments to original form and they were named IEEE 802.11a……to almost every letter of English. These standards differ from each other in many aspects like bandwidth, modulation technique, physical media, security, roaming etc. In 2007, IEEE published standard 802.11-2007 standard which is consolidated set of specifications for amendments published till 2007(a, b, d, e, g, h, j).They were rolled up into one common standard. The standard was called IEEE 802.11-20o7.Next consolidated standard was released in March 2012 that includes amendments (k, n, p, r, s, u, v, w, y and z). It was referred to as IEEE 802.11-2012.Latest release is standard including amendments ae, aa, ad, ac and af in December 2016 . IEEE 802.11-2016 is a revision based on IEEE 802.11-2012. Most recent in process are amendments ax, ay and az. More detailed description of standards can be found at standards.ieee.org.
+5
+Modes of operation of WLAN
+Wireless LANs work in two modes. They are:
+ Infrastructure mode: Devices communicate with each other via access point which is a wireless router
+ Adhoc mode: No infrastructure or access point. Devices cluster communicate with each other.
+Figure 1: Infrastructure vs. Adhoc LAN
+Infrastructure LAN
+It is a cellular architecture. System is divided into cells or clusters. Each cell is called Basic service set (BSS). Each BSS is controlled by one base station called access point. Cell consists of Stations and access points. Stations are IEEE 802.11 compliant NICs (Network interface cards). The AP and all local wireless clients must be configured to use the same network name or SSID. Data packets to be transmitted from any systems (PCs) connected with LAN to wireless station will go through AP. Topology is similar to star network where all devices are attached to a central hub and communicate to each other through it. Multiple BSS form extended service set (ESS). ESS is connected to the backbone LAN or distribution system. AP provides connectivity between wireless network and hardwired LAN network. Backbone can be Ethernet or wireless itself. It converts protocol from wireless 802.11 packets to 802.3 Ethernet packets and vice versa. One 802.11 LAN can be connected to another 802 LAN via a portal.
+6
+Figure 2: Infrastructure LAN
+Advantages of Infrastructure LAN
+• An access point allows to easily expand a wired network with wireless capability
+• Wired and wirelessly networked computers can communicate with each other
+• If there are multiple access points to the network, as in an office or large home, users can roam between interlocking access point cells, without ever losing a connection to the network
+• If access point is with a built-in router and firewall, the router allows to share Internet access between all computers, and the firewall hides the network
+• The design of infrastructure-based wireless networks is simpler because most of the network functionality lies within the access point, whereas the wireless clients can remain quite simple
+Adhoc LAN
+Wireless network is composed of only stations (802.11 compliant NICs). There will not be any access point in the network. The networked systems i.e. stations communicate directly with one another. It is also referred as IBSS (Independent Basic Service Set) or peer to peer mode. Here communication is directly over wireless radio waves and compliant to 802.11 packets
+7
+Advantages of ADHOC LAN
+• Ad-hoc networks are simple to set up
+• Ad-hoc networks are inexpensive as the cost of purchasing an access point is reduced
+• Ad-hoc networks are fast. Throughput rates between two wireless network adapters are twice as fast as when an access point is used.
+• Adhoc mode is suitable for quick wireless connection setup in office rooms, hotels or in places where wired infrastructure is not available
+Cell design in IEEE 802.11
+Neighboring cells are allocated different non-overlapping frequencies so that wireless LAN cards of the cells do not interfere with each other while transmitting the signal. For DSSS 13 channels have been defined whereas for FHSS 79 channels are defined. For efficient use of Spectrum, frequency reuse is done by allocating the same frequency to the cell which is radio isolated. It can be seen in figure 3 that different frequencies (color coded) have been used in neighboring cells A, B,C and D. But E has been assigned same frequency as A. This is because A and E are far from each other. Figure 4 depicts a scenario where a WLAN has to be setup in a 3 storey building. For each floor 3 BSS are there. Total 9 routers would be deployed. The channel allocation is done in such a way the vertical as well as horizontal interference can be minimized.
+Floor1
+ch11
+ch1
+ch6 Floor 2 ch6 Ch11 Ch1
+Floor 3
+Ch1
+Ch6
+ch11
+Figure 4: Usage of different channel during setup of WLAN in a 3 storey building
+A
+B
+C
+D
+E
+Figure 3: Frequency allocation to different cells
+8
+Summary
+ Wireless LANs have many advantages over wired LANS as in providing support for mobility, robustness, cost of installations, increased capacity, scalability, expansion and above all license free
+ Infrared and radio waves are commonly used for WLANs. IrDA is simple , cheap can be easily integrated but requires line-of-sight and has shorter range whereas radio based networks have large range, can penetrate through walls and buildings but suffers from interference from nearby devices.
+ IEEE 802.11 was developed to provide a cheap, easy and adaptable standard for WLANs in 1997 and has been undergoing amendments since then.
+ WLANs work in infrastructure as well as ad hoc mode. Infrastructure LANs comprises of a central access point through which devices communicate while ad hoc not have a access point.
+ In infrastructure LAN there are cells containing access points and devices known as BSS. Different BSS connect to form a ESS. Each access point is connected to a backbone which may be wired or wireless. Neighbouring cells are allocated non-overlapping channels.
